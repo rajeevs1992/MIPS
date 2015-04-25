@@ -1,2 +1,3 @@
+SHELL := /bin/bash
 all:
-	cc -g simulator/simulator.c
+	cc -g -DNOPCODES=45  simulator/simulator.c

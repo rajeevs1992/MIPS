@@ -4,7 +4,6 @@
 int main(int argc, char *argv)
 {
     char str[100];
-    scanf("%s", str);
     intialize_opcodes();
-    printf("%d\n", search(str));
+    validate_code("add a,b,c");
 }

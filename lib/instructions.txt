@@ -24,14 +24,22 @@ mfhi r
 mflo r
 mult r,r
 multu r,r
-noop
+noop n
 or r,r,r
 ori r,r,i
-sltu
-sll
-srl
-sb
-sh
-sw
-sub
-subu
+sb r,o(r)
+sll r,r,h
+sllv r,r,r
+slt r,r,r
+slti r,r,i
+sltiu r,r,i
+sltu r,r,r
+sra r,r,h
+srl r,r,h
+srlv r,r,r
+sub r,r,r
+subu r,r,r
+sw r,o(r)
+syscall n
+xor r,r,r
+xori r,r,i
